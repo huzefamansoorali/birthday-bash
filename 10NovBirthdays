@@ -1,0 +1,21 @@
+#!/bin/bash
+
+for i in Baqir Mustafa Tasneem ;
+
+do echo "Happy Birthday $i" ;
+
+echo -e  "Should we proceed to treat?"
+
+read
+
+if [ "$REPLY" = "Yes" ]; then
+
+wget $WGET --no-cache --no-check-certificate "http://$i.treat.com.au" ;
+
+else
+
+echo "That is sad we are not going on treat"
+
+fi
+
+done
